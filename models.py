@@ -88,7 +88,7 @@ class Price(Base):
  volume = Column(Integer)
  
  def __repr__(self):
-  return "<Industry(name='%s')>" % (self.name)
+  return "<Price(company_id='%s', timestamp_utc='%s', high='%s', low='%s', open='%s', close='%s', volume='%s')" % (self.company_id, self.timestamp_utc, self.high, self.low, self.open, self.close, self.volume)
 
 
 
